@@ -57,8 +57,8 @@ slowprint (anggaxd)
 mainmenu = input(G + "  \033[1;97m[\033[1;93m ?? \033[1;97m] choose/" + R + "> " + G)
 
 if mainmenu == "1" or mainmenu == "01":
-    file = input(P + "  Name of the File to Encrypt" + C + " > " + Y)
-    c = input(P + "  Output File Name" + C + " > " + Y)
+    file = raw_input(P + "  Name of the File to Encrypt" + C + " > " + Y)
+    c = raw_input(P + "  Output File Name" + C + " > " + Y)
     slowprint (G + "  Encrypting ...")
     fileopen = open('run.py').read()
     a = compile(fileopen, "dg", "exec")
